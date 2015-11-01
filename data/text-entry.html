@@ -1,0 +1,56 @@
+<html>
+<head>
+    <style type="text/css" media="all">
+      body {
+        background-color: gray;
+      }
+      .opt_pane {
+	    display: inline-block;
+	    float:left;
+	    width: 200px;
+	    background: white;
+	}
+	.side_by_side {
+	    display: inline-block;
+	    float:left;
+	}
+    </style>
+  </head>
+<body>
+	<div class="opt_pane">
+		<select>
+		    <option value="people">People</option>
+		    <option selected value="nesto">2</option>
+		<option value="treci">3</option>
+		</select>
+		<div id="people-options">
+			<input type="CHECKBOX" value="entity_field_firstname" >First Name<br/>
+			<input type="CHECKBOX" value="entity_field_lastname" >Last Name<br/>
+			<input type="CHECKBOX" value="entity_field_title" >Title<br/>
+			<input type="CHECKBOX" value="wym_iframe" >Biography<br/>
+			<input type="CHECKBOX" value="[id^=uploader]" >Image<br/>
+			<input type="CHECKBOX" value="entity_field_phone" >Phone<br/>
+			<input type="CHECKBOX" value="entity_field_email" >Email<br/>
+			<input type="CHECKBOX" value="entity_field_linkedinprofileurl" >LinkedIn<br/>
+			<input type="CHECKBOX" value="entity_field_twitterpageurl" >Twitter<br/>
+			<input type="CHECKBOX" value="entity_field_websiteurl" >Website<br/>
+		</div>
+		<div id="nesto-options">
+			<input type="CHECKBOX" value="First Name" >First <br/>
+			<input type="CHECKBOX" value="Last Name" >Last <br/>
+			<input type="CHECKBOX" value="Title" >Title<br/>
+			<input type="CHECKBOX" value="Biography" >Biography
+		</div>
+		<div id="treci-options">
+			<input type="CHECKBOX" value="First Name" >First 3 <br/>
+			<input type="CHECKBOX" value="Last Name" >Last <br/>
+			<input type="CHECKBOX" value="Title" >Title<br/>
+			<input type="CHECKBOX" value="Biography" >Biography
+		</div>
+	</div>
+	<div class="side_by_side">
+		<textarea rows="20" cols="60" id="edit-box"></textarea>
+	</div>
+    <input id="enter" type="button" value="Enter" />
+  </body>
+</html>
